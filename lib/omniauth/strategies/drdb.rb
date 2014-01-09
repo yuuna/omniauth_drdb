@@ -31,7 +31,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/drdb_api/v1/account').parsed
+        @raw_info ||= access_token.get('/api/account').parsed
       end
     end
   end
